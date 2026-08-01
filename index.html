@@ -1,60 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!DOCTYPE html><html><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
 <title>The 28th Corner</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:Poppins,sans-serif;background:#faf7f5;color:#333}
-header{background:linear-gradient(135deg,#bd081c,#ef476f);color:#fff;padding:90px 20px;text-align:center}
-h1{font-family:'Playfair Display',serif;font-size:56px;margin:0}
-.hero p{max-width:700px;margin:20px auto;line-height:1.8}
-.btn{display:inline-block;background:#fff;color:#bd081c;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:600}
-nav{position:sticky;top:0;background:#fff;padding:14px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.08)}
-nav a{margin:0 12px;color:#444;text-decoration:none}
-section{max-width:1100px;margin:auto;padding:60px 20px}
-h2{font-family:'Playfair Display',serif;color:#bd081c;text-align:center}
-.grid{column-count:3;column-gap:18px}
-.card{break-inside:avoid;background:#fff;border-radius:16px;margin:0 0 18px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,.08);transition:.3s}
-.card:hover{transform:translateY(-5px)}
-.img{height:180px;background:linear-gradient(135deg,#ffd6df,#fff0d9);display:flex;align-items:center;justify-content:center;font-size:48px}
-.content{padding:18px}
-.price{color:#bd081c;font-weight:700}
-footer{background:#222;color:#fff;text-align:center;padding:30px}
-@media(max-width:800px){.grid{column-count:2}h1{font-size:42px}}
-@media(max-width:500px){.grid{column-count:1}}
-</style>
-</head>
-<body>
-<header class="hero">
+body{margin:0;font-family:Poppins,sans-serif;background:#f7f4ef;color:#222}
+header{background:#111;color:#fff;text-align:center;padding:50px 20px}
+header img{width:170px;border-radius:8px}
+h1{font-family:'Playfair Display',serif}
+.hero{padding:20px}
+.btn{background:#c9a86a;color:#111;padding:12px 24px;border-radius:25px;text-decoration:none;font-weight:600}
+.wrap{max-width:1100px;margin:auto;padding:50px 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#fff;border-radius:14px;box-shadow:0 6px 15px rgba(0,0,0,.1);overflow:hidden}
+.ph{height:260px;background:linear-gradient(135deg,#f5d8d8,#f8f0d6);display:flex;align-items:center;justify-content:center;font-size:50px}
+.c{padding:18px}
+.price{color:#b8860b;font-weight:700}
+footer{background:#111;color:#fff;text-align:center;padding:20px}
+</style></head><body>
+<header>
+<img src="logo.png" alt="The 28th Corner Logo">
 <h1>The 28th Corner</h1>
-<p>Affordable & unique finds for your home, lifestyle, gifts, and everyday inspiration. Carefully curated to help you discover beautiful products without overspending.</p>
-<a class="btn" href="https://www.pinterest.com/the28thcorner/" target="_blank">Visit Pinterest</a>
+<p>Affordable Fashion • Curated Finds • Everyday Style</p>
+<p><a class="btn" href="https://www.pinterest.com/the28thcorner/" target="_blank">Follow on Pinterest</a></p>
 </header>
-<nav>
-<a href="#about">About</a><a href="#shop">Collections</a><a href="#contact">Contact</a>
-</nav>
-<section id="about">
-<h2>Welcome</h2>
-<p style="text-align:center;max-width:760px;margin:auto">Welcome to <strong>The 28th Corner</strong>! We believe everyone deserves stylish, useful, and affordable products. Browse our curated collections and discover your next favorite find.</p>
-</section>
-<section id="shop">
-<h2>Featured Collections</h2>
+<div class="wrap">
+<h2>Featured Fashion Picks</h2>
 <div class="grid">
-<div class="card"><div class="img">🏡</div><div class="content"><h3>Home Décor</h3><p>Beautiful accents for every room.</p><div class="price">From ₱499</div></div></div>
-<div class="card"><div class="img">🎁</div><div class="content"><h3>Gift Ideas</h3><p>Unique presents for every occasion.</p><div class="price">From ₱249</div></div></div>
-<div class="card"><div class="img">✨</div><div class="content"><h3>Trending Finds</h3><p>Affordable products you'll love.</p><div class="price">From ₱199</div></div></div>
-<div class="card"><div class="img">🕯️</div><div class="content"><h3>Lifestyle</h3><p>Simple pieces that brighten your day.</p><div class="price">New Arrivals</div></div></div>
-<div class="card"><div class="img">👜</div><div class="content"><h3>Accessories</h3><p>Complete your look for less.</p><div class="price">Best Seller</div></div></div>
-</div>
-</section>
-<section id="contact">
-<h2>Stay Connected</h2>
-<p style="text-align:center">Follow us on Pinterest for the latest collections and inspiration.</p>
-<p style="text-align:center"><a class="btn" href="https://www.pinterest.com/the28thcorner/" target="_blank">@the28thcorner</a></p>
-</section>
-<footer>© 2026 The 28th Corner • Affordable • Unique • Inspired</footer>
-</body></html>
+<div class="card"><div class="ph">👗</div><div class="c"><h3>Elegant Dresses</h3><p>Stylish looks for every occasion.</p><div class="price">From ₱499</div></div></div>
+<div class="card"><div class="ph">👜</div><div class="c"><h3>Handbags</h3><p>Affordable statement pieces.</p><div class="price">From ₱399</div></div></div>
+<div class="card"><div class="ph">👠</div><div class="c"><h3>Shoes</h3><p>Comfort meets fashion.</p><div class="price">From ₱999</div></div></div>
+<div class="card"><div class="ph">💍</div><div class="c"><h3>Accessories</h3><p>Complete your look.</p><div class="price">From ₱299</div></div></div>
+</div></div>
+<footer>© 2026 The 28th Corner</footer></body></html>
