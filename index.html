@@ -1,289 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Paste your Pinterest verification tag below when you receive it -->
-    <!-- <meta name="p:domain_verify" content="YOUR_VERIFICATION_CODE"> -->
+<title>The 28th Corner | Affordable & Unique Finds</title>
 
-    <title>The 28th Corner | Affordable & Unique Finds</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
+<style>
 
-        body{
-            font-family:Arial, Helvetica, sans-serif;
-            background:#fafafa;
-            color:#333;
-        }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-        header{
-            background:linear-gradient(135deg,#BD081C,#E60023);
-            color:white;
-            text-align:center;
-            padding:80px 20px;
-        }
+html{
+scroll-behavior:smooth;
+}
 
-        header h1{
-            font-size:52px;
-            margin-bottom:15px;
-        }
+body{
+font-family:'Poppins',sans-serif;
+background:#faf8f5;
+color:#444;
+}
 
-        header p{
-            font-size:20px;
-            max-width:700px;
-            margin:auto;
-            line-height:1.7;
-        }
+/* Navigation */
 
-        .button{
-            display:inline-block;
-            margin-top:35px;
-            background:white;
-            color:#BD081C;
-            padding:15px 35px;
-            border-radius:50px;
-            text-decoration:none;
-            font-weight:bold;
-            transition:.3s;
-        }
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(255,255,255,.92);
+backdrop-filter:blur(8px);
+padding:18px;
+display:flex;
+justify-content:center;
+gap:40px;
+z-index:999;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
 
-        .button:hover{
-            background:#ffeaea;
-        }
+nav a{
+text-decoration:none;
+color:#555;
+font-weight:500;
+transition:.3s;
+}
 
-        nav{
-            background:white;
-            padding:18px;
-            text-align:center;
-            position:sticky;
-            top:0;
-            box-shadow:0 2px 8px rgba(0,0,0,.08);
-        }
+nav a:hover{
+color:#BD081C;
+}
 
-        nav a{
-            text-decoration:none;
-            color:#444;
-            margin:0 18px;
-            font-weight:bold;
-        }
+/* Hero */
 
-        section{
-            max-width:1200px;
-            margin:auto;
-            padding:70px 20px;
-        }
+.hero{
 
-        h2{
-            text-align:center;
-            color:#BD081C;
-            margin-bottom:20px;
-            font-size:36px;
-        }
+height:100vh;
 
-        .intro{
-            max-width:800px;
-            margin:auto;
-            text-align:center;
-            line-height:1.8;
-            font-size:18px;
-        }
+background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.35)),
+url("https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1600&q=80");
 
-        .grid{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-            gap:25px;
-            margin-top:45px;
-        }
+background-size:cover;
+background-position:center;
 
-        .card{
-            background:white;
-            border-radius:18px;
-            overflow:hidden;
-            box-shadow:0 10px 20px rgba(0,0,0,.08);
-            transition:.3s;
-        }
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+color:white;
 
-        .card:hover{
-            transform:translateY(-6px);
-        }
+}
 
-        .placeholder{
-            height:220px;
-            background:linear-gradient(135deg,#ffd6dc,#fff3e6);
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            font-size:60px;
-        }
+.hero-content{
+animation:fadeUp 1.2s ease;
+max-width:850px;
+}
 
-        .content{
-            padding:22px;
-        }
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:70px;
+margin-bottom:20px;
+}
 
-        .content h3{
-            margin-bottom:10px;
-            color:#BD081C;
-        }
+.hero p{
+font-size:20px;
+line-height:1.8;
+margin-bottom:40px;
+}
 
-        .why{
-            background:white;
-            border-radius:20px;
-            padding:40px;
-            margin-top:60px;
-            box-shadow:0 10px 20px rgba(0,0,0,.05);
-        }
+.button{
+display:inline-block;
+background:#BD081C;
+color:white;
+padding:16px 38px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
 
-        .why ul{
-            margin-top:20px;
-            line-height:2;
-            padding-left:20px;
-        }
+.button:hover{
+background:#8e0617;
+transform:translateY(-3px);
+}
 
-        footer{
-            background:#222;
-            color:white;
-            text-align:center;
-            padding:35px;
-            margin-top:60px;
-        }
-    </style>
+/* Sections */
+
+section{
+padding:90px 10%;
+animation:fadeUp 1s ease;
+}
+
+.title{
+font-family:'Playfair Display',serif;
+font-size:42px;
+text-align:center;
+color:#BD081C;
+margin-bottom:20px;
+}
+
+.subtitle{
+text-align:center;
+max-width:800px;
+margin:auto;
+line-height:1.8;
+margin-bottom:60px;
+}
+
+/* Cards */
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+
+border-radius:18px;
+
+overflow:hidden;
+
+box-shadow:0 15px 30px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card img{
+
+width:100%;
+
+height:260px;
+
+object-fit:cover;
+
+}
+
+.card-content{
+
+padding:25px;
+
+}
+
+.card h3{
+
+margin-bottom:12px;
+
+color:#BD081C;
+
+font-family:'Playfair Display',serif;
+
+}
+
+/* About */
+
+.about{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:60px;
+
+align-items:center;
+
+}
+
+.about img{
+
+width:100%;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+.about-text h2{
+
+font-family:'Playfair Display',serif;
+
+font-size:42px;
+
+margin-bottom:20px;
+
+color:#BD081C;
+
+}
+
+.about-text p{
+
+line-height:1.9;
+
+}
+
+/* Contact */
+
+.contact{
+
+text-align:center;
+
+background:#fff;
+
+}
+
+footer{
+
+background:#222;
+
+color:white;
+
+text-align:center;
+
+padding:30px;
+
+}
+
+/* Animation */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+@media(max-width:850px){
+
+.hero h1{
+
+font-size:46px;
+
+}
+
+.about{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-<header>
+<nav>
+
+<a href="#about">About</a>
+
+<a href="#collections">Collections</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+<header class="hero">
+
+<div class="hero-content">
 
 <h1>The 28th Corner</h1>
 
 <p>
-Your destination for affordable and unique finds that add charm,
-style, and joy to everyday life.
-We carefully curate products that are practical,
-beautiful, and budget-friendly.
+
+Discover affordable and unique finds that bring beauty,
+
+style, and inspiration into your everyday life.
+
+Carefully selected with love, made for everyone.
+
 </p>
 
 <a class="button"
+
 href="https://www.pinterest.com/the28thcorner/"
+
 target="_blank">
-Explore Our Pinterest
+
+Explore Pinterest
+
 </a>
+
+</div>
 
 </header>
 
-<nav>
-<a href="#about">About</a>
-<a href="#featured">Featured</a>
-<a href="#why">Why Choose Us</a>
-<a href="#contact">Contact</a>
-</nav>
-
 <section id="about">
 
-<h2>Welcome!</h2>
+<div class="about">
 
-<p class="intro">
-At <strong>The 28th Corner</strong>, we believe that amazing products
-don't have to come with expensive price tags.
-Our goal is to help you discover affordable,
-unique, and stylish items that make everyday life a little more special.
-Whether you're shopping for yourself or looking for the perfect gift,
-we're here to inspire your next great find.
+<img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=900&q=80">
+
+<div class="about-text">
+
+<h2>Welcome to The 28th Corner</h2>
+
+<p>
+
+We believe everyone deserves beautiful products without spending a fortune.
+
+From charming home décor and thoughtful gifts to stylish everyday essentials,
+
+The 28th Corner is dedicated to helping you discover affordable treasures
+
+that make life a little brighter.
+
 </p>
+
+</div>
+
+</div>
 
 </section>
 
-<section id="featured">
+<section id="collections">
 
-<h2>Featured Collections</h2>
+<h2 class="title">Featured Collections</h2>
+
+<p class="subtitle">
+
+Browse our carefully curated collections and discover your next favorite find.
+
+</p>
 
 <div class="grid">
 
 <div class="card">
-<div class="placeholder">🛍️</div>
-<div class="content">
-<h3>Affordable Finds</h3>
-<p>Quality products at prices you'll love.</p>
+
+<img src="https://images.unsplash.com/photo-1514228742587-6b1558fcf93a?auto=format&fit=crop&w=800&q=80">
+
+<div class="card-content">
+
+<h3>Home Décor</h3>
+
+<p>Elegant pieces that make every home warm and inviting.</p>
+
 </div>
+
 </div>
 
 <div class="card">
-<div class="placeholder">🎁</div>
-<div class="content">
-<h3>Unique Gift Ideas</h3>
-<p>Thoughtful and one-of-a-kind gifts for every occasion.</p>
+
+<img src="https://images.unsplash.com/photo-1511556820780-d912e42b4980?auto=format&fit=crop&w=800&q=80">
+
+<div class="card-content">
+
+<h3>Gift Ideas</h3>
+
+<p>Unique and meaningful gifts for every celebration.</p>
+
 </div>
+
 </div>
 
 <div class="card">
-<div class="placeholder">✨</div>
-<div class="content">
-<h3>Trending Picks</h3>
-<p>Discover what's popular and worth adding to your collection.</p>
-</div>
+
+<img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80">
+
+<div class="card-content">
+
+<h3>Everyday Finds</h3>
+
+<p>Affordable products selected to make daily life easier and more enjoyable.</p>
+
 </div>
 
-<div class="card">
-<div class="placeholder">🏡</div>
-<div class="content">
-<h3>Home & Lifestyle</h3>
-<p>Simple pieces that bring comfort and style to your space.</p>
-</div>
 </div>
 
 </div>
 
 </section>
 
-<section id="why">
+<section class="contact" id="contact">
 
-<div class="why">
+<h2 class="title">Stay Connected</h2>
 
-<h2>Why Shop With Us?</h2>
+<p class="subtitle">
 
-<ul>
-<li>✔ Affordable prices without compromising quality</li>
-<li>✔ Carefully selected unique products</li>
-<li>✔ Inspiration for gifts, home, and everyday living</li>
-<li>✔ Friendly and reliable customer experience</li>
-<li>✔ New discoveries added regularly</li>
-</ul>
+Follow us on Pinterest for fresh inspiration, trending finds,
 
-</div>
+and new collections.
 
-</section>
-
-<section id="contact">
-
-<h2>Stay Connected</h2>
-
-<p class="intro">
-Follow us on Pinterest to discover new ideas, featured products,
-and exclusive inspiration.
 </p>
 
-<p style="text-align:center;margin-top:30px;">
 <a class="button"
+
 href="https://www.pinterest.com/the28thcorner/"
+
 target="_blank">
-Follow The 28th Corner
+
+Follow @the28thcorner
+
 </a>
-</p>
 
 </section>
 
 <footer>
 
-<p><strong>The 28th Corner</strong></p>
-<p>Affordable • Unique • Inspired</p>
-<p style="margin-top:10px;">
-© 2026 The 28th Corner. All Rights Reserved.
-</p>
+<p>© 2026 The 28th Corner • Affordable • Unique • Inspired</p>
 
 </footer>
 
