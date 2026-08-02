@@ -23,12 +23,185 @@ footer{background:#111;color:#fff;text-align:center;padding:20px}
 <p>Affordable Fashion • Curated Finds • Everyday Style</p>
 <p><a class="btn" href="https://www.pinterest.com/the28thcorner/" target="_blank">Follow on Pinterest</a></p>
 </header>
-<div class="wrap">
-<h2>Featured Fashion Picks</h2>
-<div class="grid">
-<div class="card"><div class="ph">👗</div><div class="c"><h3>Elegant Dresses</h3><p>Stylish looks for every occasion.</p><div class="price">From ₱499</div></div></div>
-<div class="card"><div class="ph">👜</div><div class="c"><h3>Handbags</h3><p>Affordable statement pieces.</p><div class="price">From ₱399</div></div></div>
-<div class="card"><div class="ph">👠</div><div class="c"><h3>Shoes</h3><p>Comfort meets fashion.</p><div class="price">From ₱999</div></div></div>
-<div class="card"><div class="ph">💍</div><div class="c"><h3>Accessories</h3><p>Complete your look.</p><div class="price">From ₱299</div></div></div>
-</div></div>
+<section id="collections">
+
+    <h2 class="title">Featured Collections</h2>
+
+    <p class="subtitle">
+        Discover affordable fashion and carefully curated pieces that bring style to every day.
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <img src="images/womens-fashion.jpg" alt="Women's Fashion">
+
+            <div class="card-content">
+                <span class="badge">NEW</span>
+
+                <h3>Women's Fashion</h3>
+
+                <p>
+                    Trendy dresses, tops, and everyday outfits at affordable prices.
+                </p>
+
+                <a href="https://www.pinterest.com/the28thcorner/" class="shop-btn" target="_blank">
+                    Shop Collection →
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="images/bags.jpg" alt="Bags">
+
+            <div class="card-content">
+
+                <span class="badge">BEST SELLER</span>
+
+                <h3>Bags & Accessories</h3>
+
+                <p>
+                    Stylish handbags and accessories to complete every outfit.
+                </p>
+
+                <a href="https://www.pinterest.com/the28thcorner/" class="shop-btn" target="_blank">
+                    Shop Collection →
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="images/jewelry.jpg" alt="Jewelry">
+
+            <div class="card-content">
+
+                <span class="badge">TRENDING</span>
+
+                <h3>Jewelry & Watches</h3>
+
+                <p>
+                    Elegant pieces that add the perfect finishing touch.
+                </p>
+
+                <a href="https://www.pinterest.com/the28thcorner/" class="shop-btn" target="_blank">
+                    Shop Collection →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+
+    background:#ffffff;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+}
+
+.card-content{
+
+    padding:25px;
+
+}
+
+.card-content h3{
+
+    font-family:'Playfair Display',serif;
+
+    color:#111;
+
+    font-size:28px;
+
+    margin:15px 0;
+
+}
+
+.card-content p{
+
+    line-height:1.8;
+
+    color:#666;
+
+}
+
+.badge{
+
+    background:#C9A86A;
+
+    color:white;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    letter-spacing:1px;
+
+    font-weight:600;
+
+}
+
+.shop-btn{
+
+    display:inline-block;
+
+    margin-top:22px;
+
+    color:#111;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.shop-btn:hover{
+
+    color:#C9A86A;
+
+}  
 <footer>© 2026 The 28th Corner</footer></body></html>
