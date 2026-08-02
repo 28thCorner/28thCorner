@@ -1,207 +1,409 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>The 28th Corner</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
-body{margin:0;font-family:Poppins,sans-serif;background:#f7f4ef;color:#222}
-header{background:#111;color:#fff;text-align:center;padding:50px 20px}
-header img{width:170px;border-radius:8px}
-h1{font-family:'Playfair Display',serif}
-.hero{padding:20px}
-.btn{background:#c9a86a;color:#111;padding:12px 24px;border-radius:25px;text-decoration:none;font-weight:600}
-.wrap{max-width:1100px;margin:auto;padding:50px 20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-.card{background:#fff;border-radius:14px;box-shadow:0 6px 15px rgba(0,0,0,.1);overflow:hidden}
-.ph{height:260px;background:linear-gradient(135deg,#f5d8d8,#f8f0d6);display:flex;align-items:center;justify-content:center;font-size:50px}
-.c{padding:18px}
-.price{color:#b8860b;font-weight:700}
-footer{background:#111;color:#fff;text-align:center;padding:20px}
-</style></head><body>
-<header>
-<img src="logo.png" alt="The 28th Corner Logo">
-<h1>The 28th Corner</h1>
-<p>Affordable Fashion • Curated Finds • Everyday Style</p>
-<p><a class="btn" href="https://www.pinterest.com/the28thcorner/" target="_blank">Follow on Pinterest</a></p>
-</header>
-<section id="collections">
 
-    <h2 class="title">Featured Collections</h2>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-    <p class="subtitle">
-        Discover affordable fashion and carefully curated pieces that bring style to every day.
-    </p>
+body{
+font-family:'Poppins',sans-serif;
+background:#F7F4EF;
+color:#222;
+}
 
-    <div class="grid">
+/* Header */
 
-        <div class="card">
+header{
+background:#111;
+color:white;
+text-align:center;
+padding:60px 20px;
+}
 
-            <img src="images/womens-fashion.jpg" alt="Women's Fashion">
+header img{
+width:170px;
+margin-bottom:20px;
+border-radius:8px;
+}
 
-            <div class="card-content">
-                <span class="badge">NEW</span>
+h1{
+font-family:'Playfair Display',serif;
+font-size:48px;
+margin-bottom:10px;
+}
 
-                <h3>Women's Fashion</h3>
+header p{
+font-size:18px;
+margin-bottom:25px;
+}
 
-                <p>
-                    Trendy dresses, tops, and everyday outfits at affordable prices.
-                </p>
+.btn{
 
-                <a href="https://www.pinterest.com/the28thcorner/" class="shop-btn" target="_blank">
-                    Shop Collection →
-                </a>
+display:inline-block;
 
-            </div>
+background:#C9A86A;
 
-        </div>
+color:#111;
 
-        <div class="card">
+padding:14px 28px;
 
-            <img src="images/bags.jpg" alt="Bags">
+border-radius:30px;
 
-            <div class="card-content">
+font-weight:600;
 
-                <span class="badge">BEST SELLER</span>
+text-decoration:none;
 
-                <h3>Bags & Accessories</h3>
+transition:.3s;
 
-                <p>
-                    Stylish handbags and accessories to complete every outfit.
-                </p>
+}
 
-                <a href="https://www.pinterest.com/the28thcorner/" class="shop-btn" target="_blank">
-                    Shop Collection →
-                </a>
+.btn:hover{
 
-            </div>
+background:#b89354;
 
-        </div>
+}
 
-        <div class="card">
+/* Main */
 
-            <img src="images/jewelry.jpg" alt="Jewelry">
+.wrap{
 
-            <div class="card-content">
+max-width:1200px;
 
-                <span class="badge">TRENDING</span>
+margin:auto;
 
-                <h3>Jewelry & Watches</h3>
+padding:70px 20px;
 
-                <p>
-                    Elegant pieces that add the perfect finishing touch.
-                </p>
+}
 
-                <a href="https://www.pinterest.com/the28thcorner/" class="shop-btn" target="_blank">
-                    Shop Collection →
-                </a>
+.title{
 
-            </div>
+font-family:'Playfair Display',serif;
 
-        </div>
+font-size:42px;
 
-    </div>
+text-align:center;
 
-</section>
+margin-bottom:15px;
+
+}
+
+.subtitle{
+
+text-align:center;
+
+color:#666;
+
+margin-bottom:50px;
+
+}
+
+/* Cards */
+
 .grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
 }
 
 .card{
 
-    background:#ffffff;
+background:white;
 
-    border-radius:22px;
+border-radius:20px;
 
-    overflow:hidden;
+overflow:hidden;
 
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
+box-shadow:0 10px 25px rgba(0,0,0,.08);
 
-    transition:.35s ease;
+transition:.35s;
 
 }
 
 .card:hover{
 
-    transform:translateY(-10px);
+transform:translateY(-8px);
 
-    box-shadow:0 20px 45px rgba(0,0,0,.15);
-
-}
-
-.card img{
-
-    width:100%;
-
-    height:320px;
-
-    object-fit:cover;
+box-shadow:0 18px 40px rgba(0,0,0,.15);
 
 }
 
-.card-content{
+.placeholder{
 
-    padding:25px;
+height:320px;
 
-}
+display:flex;
 
-.card-content h3{
+justify-content:center;
 
-    font-family:'Playfair Display',serif;
+align-items:center;
 
-    color:#111;
+font-size:70px;
 
-    font-size:28px;
-
-    margin:15px 0;
+background:linear-gradient(135deg,#FFE7EA,#FFF3DC);
 
 }
 
-.card-content p{
+.content{
 
-    line-height:1.8;
-
-    color:#666;
+padding:25px;
 
 }
 
 .badge{
 
-    background:#C9A86A;
+display:inline-block;
 
-    color:white;
+background:#C9A86A;
 
-    padding:6px 14px;
+color:white;
 
-    border-radius:20px;
+padding:6px 14px;
 
-    font-size:12px;
+border-radius:30px;
 
-    letter-spacing:1px;
+font-size:12px;
 
-    font-weight:600;
+font-weight:600;
 
-}
+letter-spacing:1px;
 
-.shop-btn{
-
-    display:inline-block;
-
-    margin-top:22px;
-
-    color:#111;
-
-    text-decoration:none;
-
-    font-weight:600;
-
-    transition:.3s;
+margin-bottom:15px;
 
 }
 
-.shop-btn:hover{
+.content h3{
 
-    color:#C9A86A;
+font-family:'Playfair Display',serif;
 
-}  
-<footer>© 2026 The 28th Corner</footer></body></html>
+font-size:30px;
+
+margin-bottom:15px;
+
+}
+
+.content p{
+
+line-height:1.7;
+
+color:#666;
+
+margin-bottom:20px;
+
+}
+
+.shop{
+
+text-decoration:none;
+
+color:#111;
+
+font-weight:600;
+
+}
+
+.shop:hover{
+
+color:#C9A86A;
+
+}
+
+/* Footer */
+
+footer{
+
+margin-top:70px;
+
+background:#111;
+
+color:white;
+
+text-align:center;
+
+padding:40px 20px;
+
+}
+
+footer h2{
+
+font-family:'Playfair Display',serif;
+
+font-size:36px;
+
+margin-bottom:15px;
+
+}
+
+footer p{
+
+margin-bottom:25px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="logo.png" alt="The 28th Corner Logo">
+
+<h1>The 28th Corner</h1>
+
+<p>Affordable Fashion • Curated Finds • Everyday Style</p>
+
+<a class="btn"
+href="https://www.pinterest.com/the28thcorner/"
+target="_blank">
+
+Explore Our Pinterest
+
+</a>
+
+</header>
+
+<div class="wrap">
+
+<h2 class="title">Featured Collections</h2>
+
+<p class="subtitle">
+
+Discover affordable fashion and carefully curated pieces you'll love.
+
+</p>
+
+<div class="grid">
+
+<div class="card">
+
+<div class="placeholder">👗</div>
+
+<div class="content">
+
+<span class="badge">NEW</span>
+
+<h3>Women's Fashion</h3>
+
+<p>
+Affordable dresses, tops and everyday outfits designed to keep you stylish without overspending.
+</p>
+
+<a class="shop"
+href="https://www.pinterest.com/the28thcorner/"
+target="_blank">
+
+Shop Collection →
+
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="placeholder">👜</div>
+
+<div class="content">
+
+<span class="badge">BEST SELLER</span>
+
+<h3>Bags & Accessories</h3>
+
+<p>
+Complete your outfit with fashionable handbags and accessories for every occasion.
+</p>
+
+<a class="shop"
+href="https://www.pinterest.com/the28thcorner/"
+target="_blank">
+
+Shop Collection →
+
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="placeholder">💍</div>
+
+<div class="content">
+
+<span class="badge">TRENDING</span>
+
+<h3>Jewelry & Watches</h3>
+
+<p>
+Elegant pieces that add charm and personality to your everyday style.
+</p>
+
+<a class="shop"
+href="https://www.pinterest.com/the28thcorner/"
+target="_blank">
+
+Shop Collection →
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<h2>Stay Connected</h2>
+
+<p>
+
+Follow <strong>The 28th Corner</strong> on Pinterest for the latest fashion inspiration and curated finds.
+
+</p>
+
+<a class="btn"
+
+href="https://www.pinterest.com/the28thcorner/"
+
+target="_blank">
+
+Follow @the28thcorner
+
+</a>
+
+<p style="margin-top:35px;font-size:14px;opacity:.8;">
+
+© 2026 The 28th Corner. All Rights Reserved.
+
+</p>
+
+</footer>
+
+</body>
+</html>
